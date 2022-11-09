@@ -1,0 +1,192 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@0;1&display=swap');
+
+html, body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+/*header*/
+
+header{
+    width: 100%;
+    height: 50px;
+    background-color: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+nav{
+    width: 100%;
+    height: 100%;
+    font-size: 12px;
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+}
+
+.nav_elements{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    padding: 0;
+    margin: 0;
+}
+
+.nav_elements > li {
+    border-bottom: 1px solid black;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/*main*/
+
+.title{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+/*Works Part*/
+
+.works_title{
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.works_container{
+    width: 100%;
+    height: 70vh;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work{
+    width: 60%;
+    height: calc(100% - 32px);
+    background-color: blue;
+    flex-grow: 1;
+    margin-right: 16px;
+    transition: width 300ms linear;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 16px;
+
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 32px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.img_card{
+    width: 300px;
+}
+
+.work > *{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 128px;
+}
+
+.work > .link_card, .caption_card{
+    font-size: 16px;
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+}
+
+.link_card{
+    border-bottom: 1px solid #fff;
+}
+
+.link_card::after{
+    content: " \0021E5";
+}
+
+.work:nth-child(4){
+    margin: 0;
+}
+
+.work:hover{
+    width: 100%;
+}
+
+
+/*Contact Part*/
+
+.contact-card{
+    width: calc(100% - 32px);
+    max-width: 320px;
+    height: calc(70vh - 32px);
+    background-color: blue;
+    border-radius: 4px;
+    padding-left: 32px;
+    padding-top: 32px;
+}
+
+.contact-card > *, .mail{
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Noto Serif', serif;
+    font-style: italic;
+
+    margin-bottom: 64px;
+}
+
+.mail{
+    text-decoration: underline #fff;
+}
+
+/*Social Part*/
+
+.linkedin > a, .github > a{
+    color: #fff;
+}
+
+/*Profil Part
+
+.profil_part{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 460px;
+}
+
+.profil_title{
+    margin-top: 64px;
+    margin-bottom: 16px;
+}
+
+.profil_picture{
+    aspect-ratio: 1/1;
+    height: 100%;
+    background-color: blue;
+}
+
+.profil_description{
+    width: 60%;
+    height: 100%;
+    background-color: blue;
+}
+*/
